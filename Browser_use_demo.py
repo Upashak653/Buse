@@ -24,7 +24,7 @@ class UnicodePDF(FPDF):
 async def main():
     agent = Agent(
         task="Analyse the recent Arxiv AI papers and summarize the key findings. Arxiv:https://arxiv.org/",
-        task="Give me current data about the AI industry",
+        #task="Give me current data about the AI industry",
         llm=ChatGoogle(model="gemini-2.0-flash", temperature=0.1),
         verbose=True,
         headless=False,
