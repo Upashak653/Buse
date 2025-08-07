@@ -42,6 +42,6 @@ async def main():
     # Generate PDF
     pdf = UnicodePDF()
     pdf.add_text(final_text)
-    pdf.output("arxiv_ai_summary.pdf")  # saved in current directory
+    pdf.output("scraped_content.pdf")  # saved in current directory
 
 asyncio.run(main())
